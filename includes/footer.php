@@ -5,9 +5,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><a class="" href="<?=$website_address?>" target="_blank" rel="noopener noreferrer"><?=$website_address?></a></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i><a class=""  href="tel:<?=$website_mobile?>" target="_blank" rel="noopener noreferrer"><?=$website_mobile?></a></p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><a class=""  href="mailto:<?=$website_email?>" target="_blank" rel="noopener noreferrer"><?=$website_email?></a></p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Services</h3>
@@ -19,19 +19,19 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Quick Links</h3>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="about-us.php">About-Us</a>
+                    <a class="btn btn-link" href="our-services.php">Our Services</a>
+                    <a class="btn btn-link" href="our-team.php">Our Team</a>
+                    <a class="btn btn-link" href="our-projects.php">Our Projects</a>
+                    <a class="btn btn-link" href="contsct-us.php">Contact-Us</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Follow Us</h3>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href="<?=$youtube_link?>"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href="<?=$facebook_link?>"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href="<?=$twitter_link?>"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0" href="<?=$instagram_link?>"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="position-relative mx-auto mt-5" style="max-width: 400px;">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">

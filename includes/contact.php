@@ -9,11 +9,11 @@
                     <div class="col-12">
                             <div class="d-flex">
                                 <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
-                                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
                                 </div>
                                 <div class="ms-4">
                                     <p class="mb-2">Office Address</p>
-                                    <h3 class="mb-0">+012 345 6789</h3>
+                                    <h3 class="mb-0"><a  rel="noopener noreferrer"><?=$website_address?></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="ms-4">
                                     <p class="mb-2">Call Us Now</p>
-                                    <h3 class="mb-0">+012 345 6789</h3>
+                                    <h3 class="mb-0"><a href="tel:<?=$website_mobile?>" target="_blank" rel="noopener noreferrer"><?=$website_mobile?></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="ms-4">
                                     <p class="mb-2">Mail Us Now</p>
-                                    <h3 class="mb-0">info@example.com</h3>
+                                    <h3 class="mb-0"><a href="mailto:<?=$website_email?>" target="_blank" rel="noopener noreferrer"><?=$website_email?></a></h3>
                                 </div>
                             </div>
                         </div>

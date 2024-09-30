@@ -5,7 +5,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
   define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '');
-  define('DB_NAME', 'tbl_db');
+  define('DB_NAME', 'gbd_db');
 } else {
   // Server database configuration
   define('DB_HOST', 'localhost');
