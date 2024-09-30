@@ -1,5 +1,5 @@
 <?php
-$page_title = "HOME || Anmol Biryani Restuarant";
+$page_title = "HOME || Gaurav Promoters & Builders";
 $pagename = "Home";
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
@@ -11,43 +11,3 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 <?php include('includes/contact.php');?>
 <?php include('includes/footer.php');?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
