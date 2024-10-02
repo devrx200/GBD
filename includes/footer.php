@@ -5,9 +5,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><a class="" href="<?=$website_address?>" target="_blank" rel="noopener noreferrer"><?=$website_address?></a></p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i><a class=""  href="tel:<?=$website_mobile?>" target="_blank" rel="noopener noreferrer"><?=$website_mobile?></a></p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><a class=""  href="mailto:<?=$website_email?>" target="_blank" rel="noopener noreferrer"><?=$website_email?></a></p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><?=$website_address?></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i><a class="text-decoration-none"  href="tel:<?=$website_mobile?>" target="_blank" rel="noopener noreferrer"><?=$website_mobile?></a></p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><a class="text-decoration-none"  href="mailto:<?=$website_email?>" target="_blank" rel="noopener noreferrer"><?=$website_email?></a></p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Services</h3>
