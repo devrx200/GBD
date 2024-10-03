@@ -421,90 +421,60 @@
 }
 
 </style>
-<!-- Navbar Start     -->
-<!-- <nav class="navbar navbar-expand-lg navbar-light  bg-white  shadow sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-  
-<a href="index.php" class="navbar-brand ms-4 ms-lg-0  bg-white pe-3 roundded-end">
-        <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">Gaurav Promoters & Builders</h1>
-    </a>
-    <button type="button" class="navbar-toggler me-4 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon "></span>
-    </button>
 
-    <div class="collapse navbar-collapse " id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0 d-lg-none">
+<!-- Navbar Start -->
+<nav class="d-lg-none d-block navbar navbar-expand-lg navbar-light bg-white sticky-top py-0 px-3 wow fadeIn" data-wow-delay="0.1s">
+    <div class="d-flex justify-content-between m-0 p-0 ">
+    <a href="index.php" class="navbar-brand ms-1 bg-white pe-3 rounded-end">
+        <h1 class="text-primary m-0"><img class="me-2" src="img/icons/icon-1.png" alt="Icon">GPB</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="index.php" class="nav-item nav-link active fw-bold">Home</a>
-            <a href="about-us.php" class="nav-item nav-link fw-bold">About-Us</a>
+            <a href="about-us.php" class="nav-item nav-link fw-bold">About Us</a>
             <a href="our-services.php" class="nav-item nav-link fw-bold">Our Services</a>
             <a href="our-projects.php" class="nav-item nav-link fw-bold">Our Projects</a>
             <a href="our-team.php" class="nav-item nav-link fw-bold">Our Team</a>
-            <a href="contact-us.php" class="nav-item nav-link fw-bold">Contact-Us</a>
+            <a href="contact-us.php" class="nav-item nav-link fw-bold">Contact Us</a>
         </div>
         <a href="contact-us.php" class="ms-auto btn btn-primary py-3 px-5 fw-bold rounded d-none d-lg-block text-uppercase">Enquire Now</a>
+        <div class="side-nav-bar border border-dark border-2 bg-info ps-1 shadow">
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-btn" for="menu-toggle">
+        <span></span>
+    </label>
+</div>
     </div>
-</nav> -->
+</nav>
 <!-- Navbar End -->
 
-<div class="nav nav-overlay ">
+
+<div class="nav nav-overlay">
     <div class="nav__content">
         <div class="container">
-            <div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
+            <div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-5 nav__block">
+                <!-- Navigation Links Section -->
                 <div class="col-md-5">
                     <ul class="nav__list d-none d-md-block">
-                        <li class="nav__list-item "><a href="index.html" class="hover-target active">Home</a></li>
-                        <li class="nav__list-item"><a href="index.html" class="hover-target">Onepage</a></li>
-                        <li class="nav__list-item"><a href="index.html" class="hover-target">Styles</a></li>
-                        <li class="nav__list-item"><a href="index.html" class="hover-target">Blog</a></li>
-                        <li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a>
-                        </li>
-                        <li class="nav__list-item"><a href="contact.html" class="hover-target">Contact us</a></li>
+                        <li class="nav__list-item"><a href="index.php" class="hover-target active"><b class="text-info">Home</b></a></li>
+                        <li class="nav__list-item"><a href="about-us.php" class="hover-target"><b class="text-info">About-Us</b></a></li>
+                        <li class="nav__list-item"><a href="our-services.php" class="hover-target"><b class="text-info">Our-Services</b></a></li>
+                        <li class="nav__list-item"><a href="our-projects.php" class="hover-target"><b class="text-info">Our-Projects</b></a></li>
+                        <li class="nav__list-item"><a href="our-team.php" class="hover-target"><b class="text-info">Our-Team</b></a></li>
+                        <li class="nav__list-item"><a href="contact-us.php" class="hover-target"><b class="text-info">Contact-Us</b></a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 text-white">
-                    <h3 class="text-white fw-bold nav__block-item">Contact info</h3>
-                    <p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
-                        sint sapiente rem neque temporibus id ratione perspiciatis, tenetur est repellendus
-                        aspernatur culpa repudiandae omnis.</p>
-                    <ul class="list-unstyled text-light nav__block-item">
-                        <li class="menu-item">
-                            <i class="icon icon-location me-2"></i>2489 Locust Court, Los Angeles
-                        </li>
-                        <li class="menu-item">
-                            <i class="icon icon-location2 me-2"></i>3927 Red Maple Drive, Los Angeles
-                        </li>
-                        <li class="menu-item">
-                            <i class="icon icon-phone me-2"></i>+63 667 341 3463
-                        </li>
-                        <li class="menu-item">
-                            <i class="icon icon-envelope-o me-2"></i><a href="#"
-                                class="text-white">contact@example.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- <div class="col-md-3 text-white">
-                    <h3 class="text-white fw-bold nav__block-item">Pages</h3>
-                    <ul class="list-unstyled nav__block-item">
-                        <li><a href="index.html" class="text-white">Onepage </a></li>
-                        <li><a href="index.html" class="text-white">Styles </a></li>
-                        <li><a href="index.html" class="text-white">Blog </a></li>
-                        <li><a href="index.html" class="text-white">Single Post </a></li>
-                        <li><a href="index.html" class="text-white">Contact us </a></li>
-                        <li><a href="index.html" class="text-white">Portfolio Masonry </a></li>
-                        <li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-                        <li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-                        <li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-                        <li><a href="index.html" class="text-white">Single Portfolio </a></li>
-                        <li><a href="index.html" class="text-white">About Us </a></li>
-                        <li><a href="index.html" class="text-white">Our Team </a></li>
-                    </ul>
-                </div> -->
             </div>
         </div>
-
     </div>
 </div>
+ 
 
-<div class="side-nav-bar">
+<div class="side-nav-bar d-none d-sm-block  border border-dark border-2 bg-info ps-1 shadow">
     <input id="menu-toggle" type="checkbox" />
     <label class="menu-btn" for="menu-toggle">
         <span></span>

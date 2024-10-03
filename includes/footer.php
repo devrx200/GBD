@@ -23,7 +23,7 @@
                     <a class="btn btn-link" href="our-services.php">Our Services</a>
                     <a class="btn btn-link" href="our-team.php">Our Team</a>
                     <a class="btn btn-link" href="our-projects.php">Our Projects</a>
-                    <a class="btn btn-link" href="contsct-us.php">Contact-Us</a>
+                    <a class="btn btn-link" href="contact-us.php">Contact-Us</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Follow Us</h3>
