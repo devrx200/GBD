@@ -10,10 +10,9 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h4 class="section-title">About Us</h4>
-                    <h1 class="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                    <div class="d-flex align-items-center mb-5">
+                    <h1 class="display-5 mb-4 text-justify">Gaurav Promoters & Builders</h1>
+                    <p>Gaurav Promoters & Builders stands at the forefront of the real estate industry, dedicated to delivering exceptional quality and innovation in every project we undertake. we believe in creating superior residential and commercial spaces that define modern living and working environments.Our team of experienced professionals is committed to delivering quality construction and innovative design, ensuring that every project exceeds our clients' expectations.We pride ourselves on our integrity, transparency, and attention to detail, working closely with clients to understand their unique needs and deliver personalized solutions. At Gaurav Promoters & Builders, we are committed to integrity, excellence, and sustainability. We believe in fostering strong relationships through transparent communication and unwavering dedication to our client’s needs. Discover how our passion for real estate can turn your dreams into reality.Choose Gaurav Promoters & Builders—where innovation meets reliability, and your vision takes shape.</p>
+                    <div class="d-flex align-items-center mb-5"> 
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
                             <h1 class="display-1 mb-n2" data-toggle="counter-up">25</h1>
                         </div>

@@ -473,7 +473,7 @@
 </div>
  
 
-<div class="side-nav-bar d-none d-sm-block  border border-dark border-2 bg-info ps-1 shadow">
+<div class="side-nav-bar d-none d-md-block  border border-dark border-2 bg-info ps-1 pb-1 shadow" style="margin-top: -43px">
     <input id="menu-toggle" type="checkbox" />
     <label class="menu-btn" for="menu-toggle">
         <span></span>

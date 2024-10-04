@@ -41,7 +41,7 @@ $header_logo_location = getvalfield($conn, 'logo_icon', "header_location", "1");
 $footer_logo_location = getvalfield($conn, 'logo_icon', "footer_location", "1");
 
 // About Page 
-$about_title = getvalfield($conn, 'about', "tittle", "1");
-$about_description = getvalfield($conn, 'about', "description", "1");
-$about_url = getvalfield($conn, 'about', "location", "1"); 
+// $about_title = getvalfield($conn, 'about', "tittle", "1");
+// $about_description = getvalfield($conn, 'about', "description", "1");
+// $about_url = getvalfield($conn, 'about', "location", "1"); 
 

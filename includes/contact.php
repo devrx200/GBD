@@ -1,88 +1,137 @@
-  <!-- Appointment Start -->
-  <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="section-title">Contact-Us</h4>
-                    <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> -->
-                    <div class="row g-4">
-                    <div class="col-12">
-                            <div class="d-flex">
-                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
-                                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <p class="mb-2">Office Address</p>
-                                    <h3 class="mb-0"><a  rel="noopener noreferrer"><?=$website_address?></a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
-                                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <p class="mb-2">Call Us Now</p>
-                                    <h3 class="mb-0"><a href="tel:<?=$website_mobile?>" target="_blank" rel="noopener noreferrer"><?=$website_mobile?></a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
-                                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <p class="mb-2">Mail Us Now</p>
-                                    <h3 class="mb-0"><a href="mailto:<?=$website_email?>" target="_blank" rel="noopener noreferrer"><?=$website_email?></a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3">
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Name" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="email" class="form-control" placeholder="Your Email" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Mobile" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <select class="form-select" style="height: 55px;">
-                                <option selected>Choose Service</option>
-                                <option value="1">Service 1</option>
-                                <option value="2">Service 2</option>
-                                <option value="3">Service 3</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="date" id="date" data-target-input="nearest">
-                                <input type="text"
-                                    class="form-control datetimepicker-input"
-                                    placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="time" id="time" data-target-input="nearest">
-                                <input type="text"
-                                    class="form-control datetimepicker-input"
-                                    placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Appointment End -->
+<?php
+        $tblname = "inbox";
+        $tblkey = "id";
+        $page_name = basename($_SERVER['PHP_SELF']);
+
+        // insert
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+            $name = $_POST['name'];
+            $mobile = $_POST['mobile'];
+            $email = $_POST['email'];
+            $subject = $_POST['subject'];
+            $message = $_POST['message'];
+            // insert query
+            $insert_query = "INSERT INTO $tblname (name, mobile, email, subject, message) VALUEs ('$name', '$mobile', '$email', '$subject', '$message')";
+
+            if (mysqli_query($conn, $insert_query)) {
+                echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Message Send Successfully.',
+                icon: 'success',
+                confirmButtonText: 'Done',
+                timer: 3000,
+                timerProgressBar: true,
+                allowOutsideClick: false, 
+                willClose: () => {
+                   window.location.href = 'index.php';
+                }
+            });
+        });
+    </script>";
+                // $msg = "<div class='msg-container'><b class='alert alert-success msg'>Contact Info Updated Successfully</b></div>";
+            } else {
+                // $msg = "<div class='msg-container'><b class='alert alert-danger msg'>Update Failed !..</b></div>";
+                echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: 'Oops!',
+                text: 'Message Feiled....',
+                icon: 'error',
+                confirmButtonText: 'Okay',
+                timer: 3000, // 3000 milliseconds = 3 seconds
+                timerProgressBar: true,
+                backdrop: true,
+                allowOutsideClick: false,
+                customClass: { confirmButton: 'custom-confirm-button' },
+                willClose: () => {
+                    // Redirect to a specific URL after the alert is closed
+                   window.location.href = 'index.php';
+                }
+            });
+        });
+            </script>";
+            }
+        }
+        ?>
+
+
+     <!-- Contact Start -->
+     <div class="container-xxl py-5">
+         <div class="container">
+             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                 <h5 class="section-title ff-secondary text-center text-primary fw-bolder">Contact Us</h5>
+                 <h1 class="mb-5">Contact For Any Query</h1>
+             </div>
+             <div class="row g-4">
+                 <div class="col-12">
+                     <div class="row gy-4 text-center ">
+                         <div class="col-md-4">
+                             <h5 class="section-title ff-secondary  text-primary fw-bolder">Address</h5>
+                             <p><i class="fa fa-map text-primary me-2"></i><?= $website_address ?></p>
+                         </div>
+                         <div class="col-md-4">
+                             <h5 class="section-title ff-secondary fw-bolder  text-primary">Mobile</h5>
+                             <p><i class="fa fa-phone text-primary me-2"></i><?= $website_mobile ?></p>
+                         </div>
+                         <div class="col-md-4">
+                             <h5 class="section-title ff-secondary fw-bolder  text-primary">Email</h5>
+                             <p><i class="fa fa-envelope-open text-primary me-2"></i><?= $website_email ?></p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                     <iframe class="position-relative rounded w-100 h-100"
+                         src="<?= $map_url ?>"
+                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                         tabindex="0"></iframe>
+                 </div>
+                 <div class="col-md-6">
+                     <div class="wow fadeInUp" data-wow-delay="0.2s">
+                         <form  method="post">
+                             <div class="row g-3">
+                                 <div class="col-md-6">
+                                     <div class="form-floating">
+                                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                         <label for="name">Your Name</label>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="form-floating">
+                                         <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+                                         <label for="mobile">Your Mobile Number</label>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                     <div class="form-floating">
+                                         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                         <label for="email">Your Email</label>
+                                     </div>
+                                 </div>
+                                 <div class="col-12">
+                                     <div class="form-floating">
+                                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                         <label for="subject">Subject</label>
+                                     </div>
+                                 </div>
+                                 <div class="col-12">
+                                     <div class="form-floating">
+                                         <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 150px" required></textarea>
+                                         <label for="message">Message</label>
+                                     </div>
+                                 </div>
+                                 <div class="col-12">
+                                     <button class="btn btn-primary w-100 py-3" id="submit" name="submit" type="submit">Send Message</button>
+                                 </div>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- Contact End --> 
+ 
+
+  
