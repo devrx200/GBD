@@ -13,6 +13,14 @@
     z-index: 99;
 }
 
+.btn-left {
+    position: fixed;
+    right: 45px;
+    bottom: 53px;
+    z-index: 99;
+}
+
+
 
 /*** Spinner ***/
 #spinner {
